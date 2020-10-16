@@ -59,6 +59,27 @@ public class Tavunu {
         }
     }
 
+    public int getPava()
+    {
+        return amount;
+    }
+
+    public int getBirthYear()
+    {
+        return birthYear;
+    }
+
+
+    public void setBirthYear(int birthYear)
+    {
+        this.birthYear=birthYear;
+    }
+
+    public String toString()
+    {
+        return "Name is: " + name + " Birthyear is: " + birthYear + " Amount of pava is: " + amount;
+    }
+
  
 }
 
