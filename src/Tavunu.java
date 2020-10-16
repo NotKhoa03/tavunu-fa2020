@@ -17,8 +17,8 @@ public class Tavunu
     private int pava;
 
     public Tavunu() {
-        name = "";
-        birthYear = 0;
+        name="";
+        birthYear = Integer.MIN_VALUE;
         pava = 0;
     }
 
@@ -30,12 +30,12 @@ public class Tavunu
     }
 
     public boolean setName(String name) {
-        if (name.charAt(0) == 'T' || name.charAt(0) == 'D') {
+        if(name.charAt(0) =='T' || name.charAt(0) =='D')
+        {
             this.name = name;
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
 
     public String getName() {
@@ -43,7 +43,7 @@ public class Tavunu
     }
 
     public boolean spendPava(int pava) {
-        if (pava >= 0) {
+        if (pava >= 0 && pava <= this.pava) {
             this.pava -= pava;
             return true;
         } else {
@@ -52,7 +52,7 @@ public class Tavunu
     }
 
     public boolean receivePava(int pava) {
-        if (pava >= 0) {
+        if (pava >= 0 && pava <= this.pava) {
             this.pava = +pava;
             return true;
         } else {
@@ -74,7 +74,7 @@ public class Tavunu
     }
 
     public String toString() {
-        return "Name is: " + name + " Birthyear is: " + birthYear + " Amount of pava is: " + pava;
+        return name + " born in " + birthYear + " has " + pava ".";
     }
 
 }
