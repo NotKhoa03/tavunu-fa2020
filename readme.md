@@ -10,3 +10,4 @@ A tavunu is an imaginary Earth-dwelling being that looks a bit like a [Patagonia
 What to do
 ----------
 Go to the [Part 1 page](https://github.com/mkonar-teach/tavunu-fa2020/wiki/Part-1) of the [project wiki](https://github.com/mkonar-teach/tavunu-fa2020/wiki) to learn what you have to do to start this project.
+"# Term-Project-1" 
