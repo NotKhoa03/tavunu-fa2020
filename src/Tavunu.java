@@ -9,6 +9,7 @@
  * @author Mithat Konar
  * @author Your Name
  */
+import java.lang.String;
 public class Tavunu
 {
 
@@ -30,13 +31,23 @@ public class Tavunu
     }
 
     public boolean setName(String name) {
-        if(name.charAt(0) =='T' || name.charAt(0) =='D')
+        if(name == "")
+        {
+            return true;
+        }
+        if (name.charAt(0) == 'T' || name.charAt(0) == 'D')
         {
             this.name = name;
             return true;
+
         }
-        return false;
+
+        else
+        {
+            return false;
+        }
     }
+
 
     public String getName() {
         return name;
@@ -53,7 +64,7 @@ public class Tavunu
 
     public boolean receivePava(int pava) {
         if (pava >= 0 && pava <= this.pava) {
-            this.pava = +pava;
+            this.pava += pava;
             return true;
         } else {
             return false;
@@ -74,7 +85,7 @@ public class Tavunu
     }
 
     public String toString() {
-        return name + " born in " + birthYear + " has " + pava ".";
+        return name + " born in " + birthYear + " has " + pava + " pava.";
     }
 
 }
