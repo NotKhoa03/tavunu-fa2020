@@ -9,31 +9,32 @@
  * @author Mithat Konar
  * @author Your Name
  */
-public class Tavunu {
+public class Tavunu
+{
 
     private String name;
     private int birthYear;
-    private int amount;
+    private int pava;
 
     public Tavunu() {
         name = "";
         birthYear = 0;
-        amount = 0;
+        pava = 0;
     }
 
     public Tavunu(String name, int birthYear, int pava) {
-
+        super();
         this.name = name;
         this.birthYear = birthYear;
-        this.pava = amount;
+        this.pava = pava;
     }
 
     public boolean setName(String name) {
-        if (name.charAt(0) = 'T' || name.charAt(0) = 'D') {
+        if (name.charAt(0) == 'T' || name.charAt(0) == 'D') {
             this.name = name;
             return true;
         } else {
-            return false ''
+            return false;
         }
     }
 
@@ -41,45 +42,40 @@ public class Tavunu {
         return name;
     }
 
-    public boolean spendPavana(int amount) {
-        if (amount >= 0) {
-            this.amount -= amount;
+    public boolean spendPava(int pava) {
+        if (pava >= 0) {
+            this.pava -= pava;
             return true;
         } else {
             return false;
         }
     }
 
-    public boolean receivePava(int amount) {
-        if (amount >= 0) {
-            this.amount = +amount;
+    public boolean receivePava(int pava) {
+        if (pava >= 0) {
+            this.pava = +pava;
             return true;
         } else {
             return false;
         }
     }
 
-    public int getPava()
-    {
-        return amount;
+    public int getPava() {
+        return pava;
     }
 
-    public int getBirthYear()
-    {
+    public int getBirthYear() {
         return birthYear;
     }
 
 
-    public void setBirthYear(int birthYear)
-    {
+    public void setBirthYear(int birthYear) {
         this.birthYear=birthYear;
     }
 
-    public String toString()
-    {
-        return "Name is: " + name + " Birthyear is: " + birthYear + " Amount of pava is: " + amount;
+    public String toString() {
+        return "Name is: " + name + " Birthyear is: " + birthYear + " Amount of pava is: " + pava;
     }
 
- 
 }
 
